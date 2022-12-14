@@ -1,0 +1,29 @@
+﻿@using MasterChef.Domain.Models
+@model Categoria
+
+<h4>Receitas</h4><br/>
+@*<div>
+
+    <a class="btn btn-primary" asp-controller="receita" asp-action="Create">Novo</a>
+</div>*@
+<br/>
+
+<table class="table">
+   
+    @foreach (var receita in Model.Receitas)
+    {
+        
+        <tr>
+         
+            <td>
+              <a asp-action="detail" asp-controller="receita" asp-route-id="@receita.Id">@Html.Raw(receita.Titulo)</a>
+            </td>
+
+            <td>
+                
+                <img src="@receita.Imagem" width="100px">
+            </td>
+            
+        </tr>
+    }
+</table>

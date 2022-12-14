@@ -1,0 +1,11 @@
+﻿@using MasterChef.Domain.Models
+@model IEnumerable<Receita>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li style="background-color:red;">
+            <a> @item.Titulo</a>
+        </li>
+    }
+</ul>

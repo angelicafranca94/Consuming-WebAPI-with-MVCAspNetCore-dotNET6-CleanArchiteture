@@ -1,0 +1,24 @@
+﻿@using MasterChef.Domain.Models
+@model Receita
+
+
+<h4>@Model.Titulo</h4>
+<div class="mr-2 ml-2">
+
+   <p><img src="@Model.Imagem" width="500px"></p>
+
+    <h5>Ingredientes</h5>
+
+    <p><div>@Html.Raw(@Model.Ingredientes)</div></p>
+
+    <h5>Modo de Preparo</h5>
+
+    <p><div>@Html.Raw(@Model.ModoPreparo)</div></p>
+
+
+
+</div>
+
+
+
+

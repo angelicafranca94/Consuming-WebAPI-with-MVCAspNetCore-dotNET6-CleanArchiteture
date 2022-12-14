@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="~/site.min.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <header>
+        <partial name="_menu"></partial>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            @@MasterChefFiap - 2022
+        </div>
+    </footer>
+
+
+    @RenderSection("footer",false)
+    @RenderSection("scripts",false)
+    @*@RenderSection("footer",true)*@
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/jquery.jcarousel.min.js"></script>
+    <script src="~/site.js"></script>
+    <script src="/jquery.lazy.min.js"></script>
+    <script>
+
+      
+    $('.lazy').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
+
+
+    </script>
+
+</body>
+</html>

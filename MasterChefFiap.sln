@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterChef.Api", "MasterChef.Api\MasterChef.Api.csproj", "{EC381B17-E311-4B99-9742-191019CE9447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterChef.Web", "MasterChef.Web\MasterChef.Web.csproj", "{ABD76989-DDE0-41B0-A905-02B6F3A1AE23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterChef.Application", "MasterChef.Application\MasterChef.Application.csproj", "{E1F78E78-80CA-4722-84E9-1244B3C465DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterChef.Domain", "MasterChef.Domain\MasterChef.Domain.csproj", "{4DCCD31A-9E8A-4C4A-8FB5-E6D98398B94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterChef.Infrastructure", "MasterChef.Infrastructure\MasterChef.Infrastructure.csproj", "{B731B74D-D2F4-4792-999B-084D2455C5EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterChef.Persistence", "MasterChef.Persistence\MasterChef.Persistence.csproj", "{183EB044-708C-43C3-A25E-4CDF36262E63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC381B17-E311-4B99-9742-191019CE9447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC381B17-E311-4B99-9742-191019CE9447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC381B17-E311-4B99-9742-191019CE9447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC381B17-E311-4B99-9742-191019CE9447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD76989-DDE0-41B0-A905-02B6F3A1AE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD76989-DDE0-41B0-A905-02B6F3A1AE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD76989-DDE0-41B0-A905-02B6F3A1AE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD76989-DDE0-41B0-A905-02B6F3A1AE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F78E78-80CA-4722-84E9-1244B3C465DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F78E78-80CA-4722-84E9-1244B3C465DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F78E78-80CA-4722-84E9-1244B3C465DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F78E78-80CA-4722-84E9-1244B3C465DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCCD31A-9E8A-4C4A-8FB5-E6D98398B94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCCD31A-9E8A-4C4A-8FB5-E6D98398B94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCCD31A-9E8A-4C4A-8FB5-E6D98398B94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCCD31A-9E8A-4C4A-8FB5-E6D98398B94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B731B74D-D2F4-4792-999B-084D2455C5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B731B74D-D2F4-4792-999B-084D2455C5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B731B74D-D2F4-4792-999B-084D2455C5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B731B74D-D2F4-4792-999B-084D2455C5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183EB044-708C-43C3-A25E-4CDF36262E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183EB044-708C-43C3-A25E-4CDF36262E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183EB044-708C-43C3-A25E-4CDF36262E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183EB044-708C-43C3-A25E-4CDF36262E63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDDD8457-3A54-4685-B0D5-14346D1C6F34}
+	EndGlobalSection
+EndGlobal
