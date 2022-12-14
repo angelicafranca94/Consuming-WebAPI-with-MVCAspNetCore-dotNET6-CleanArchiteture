@@ -33,7 +33,6 @@ public class ReceitaController : Controller
         return receitas;
     }
 
-
     [HttpPost]
     public async Task<ActionResult<Receita>> Post(Receita receita)
     {
@@ -58,7 +57,6 @@ public class ReceitaController : Controller
 
         return BadRequest(ModelState);
     }
-
 
     [HttpDelete]
     [Route("{id}")]

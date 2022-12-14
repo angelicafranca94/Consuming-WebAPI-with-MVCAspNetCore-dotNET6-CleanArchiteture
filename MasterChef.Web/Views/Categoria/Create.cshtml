@@ -1,0 +1,33 @@
+﻿@using MasterChef.Domain.Models
+@model Categoria
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Criar Categoria</h4>
+<div class="mr-2 ml-2">
+
+<form asp-action="create" asp-controller="categoria" method="post">
+
+    <div asp-validation-summary="All"></div>
+    
+    
+    <div class="form-group">
+        <label asp-for="Titulo" class="control-label"></label>
+        <input  asp-for="Titulo" class="form-control"/>
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+
+    </div>
+
+     <div class="form-group">
+        <label asp-for="Descricao" class="control-label"></label>
+        <input  asp-for="Descricao" class="form-control"/>
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+
+    </div>
+
+    <button type="submit" class="mt-4">Salvar</button>
+
+</form>
+</div>

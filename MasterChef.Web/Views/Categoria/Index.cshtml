@@ -2,10 +2,9 @@
 @model List<Categoria>
 
 <h4>Categorias</h4><br/>
-@*<div>
-
-    <a class="btn btn-primary" asp-controller="receita" asp-action="Create">Novo</a>
-</div>*@
+<div>
+    <a class="btn btn-primary" asp-controller="categoria" asp-action="Create">Novo</a>
+</div>
 <br/>
 
 <table class="table">
@@ -20,15 +19,15 @@
 
             <td>@categoria.Descricao</td>
             
-          @*  <td>
-                <a asp-action="edit" asp-controller="receita" asp-route-id="@receita.Id" class="btn btn-secondary">Editar</a>
+            <td>
+                <a asp-action="edit" asp-controller="categoria" asp-route-id="@categoria.Id" class="btn btn-secondary">Editar</a>
             </td>
 
             <td>
-                <form asp-action="delete" asp-controller="receita" asp-route-id="@receita.Id" method="post">
+                <form asp-action="delete" asp-controller="categoria" asp-route-id="@categoria.Id" method="post">
                     <button type="submit" class="btn btn-danger"> Remover </button>
                 </form>
-            </td>*@
+            </td>
 
         </tr>
     }

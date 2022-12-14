@@ -12,19 +12,35 @@ public class CategoriaRepository : ICategoriaRepository
     {
         _dataContext = dataContext;
     }
-
     public async Task<List<Categoria>> GetAllAsync()
     {
         return await _dataContext.Categorias.ToListAsync();
     }
-
     public async Task<Categoria> GetByIdAsync(int id)
     {
         return await _dataContext.Categorias.FirstOrDefaultAsync(x => x.Id == id);
     }
-
     public async Task<Categoria> GetRecipesByIdAsync(int id)
     {
         return await _dataContext.Categorias.Include(d => d.Receitas).FirstOrDefaultAsync(d => d.Id == id);
     }
+    public async Task AddAsync(Categoria categoria)
+    {
+        _dataContext.Categorias.Add(categoria);
+
+        await _dataContext.SaveChangesAsync();
+    }
+    public async Task UpdateAsync(Categoria categoria)
+    {
+        _dataContext.Categorias.Update(categoria);
+
+        await _dataContext.SaveChangesAsync();
+    }
+    public async Task DeleteAsync(Categoria receita)
+    {
+        _dataContext.Categorias.Remove(receita);
+
+        await _dataContext.SaveChangesAsync();
+    }
 }
+
